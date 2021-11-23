@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:layout_height="wrap_content"
+    tools:layout_width="wrap_content"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <com.raproject.eventclicker.view.ActivityTypeView
+        android:id="@+id/activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.raproject.eventclicker.view.ActivityTypeView
+        android:id="@+id/music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.raproject.eventclicker.view.ActivityTypeView
+        android:id="@+id/pet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.raproject.eventclicker.view.ActivityTypeView
+        android:id="@+id/rest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.raproject.eventclicker.view.ActivityTypeView
+        android:id="@+id/sick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.raproject.eventclicker.view.ActivityTypeView
+        android:id="@+id/coffee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.raproject.eventclicker.view.ActivityTypeView
+        android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.raproject.eventclicker.view.ActivityTypeView
+        android:id="@+id/wine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.raproject.eventclicker.view.ActivityTypeView
+        android:id="@+id/smoking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/reminder_type_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="activity,music,pet,rest,sick,coffee,play,wine,smoking"
+        app:flow_horizontalGap="8dp"
+        app:flow_maxElementsWrap="3"
+        app:flow_verticalGap="18dp"
+        app:flow_wrapMode="chain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</merge>
